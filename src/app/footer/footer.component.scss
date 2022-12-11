@@ -1,0 +1,24 @@
+
+@import '../../styles.scss';
+
+.logoDiv a{
+    font-weight: 500;
+   &:hover{
+    color:$linkWaterWhite !important;
+      }
+}
+.socials a svg:hover path{
+    fill:#da6d97 !important;
+}
+
+@media screen and (min-width:768px){
+            .logoDiv{
+                width:70%;
+            }
+            .socials{
+                width:30%;
+                text-align: right;
+            }
+             
+            
+}
