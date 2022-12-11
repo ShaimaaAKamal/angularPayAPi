@@ -5,8 +5,9 @@ $migBlue:#1b262f;
 $charmPink:#da6d97;
 $lightBlue:#6c8294;
 .button{
-    padding:1rem 1.5rem;
+    padding:.7rem 1.5rem;
     border-radius: 2rem;
+    border:none;
 }
 .mainBtn{
     @extend .button;
