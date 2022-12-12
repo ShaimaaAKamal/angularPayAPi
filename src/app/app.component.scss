@@ -1,0 +1,32 @@
+.parent{
+    padding-top:60px;
+}
+
+.bigContainer{
+    background-image: url('../assets/Images/shared/desktop/bg-pattern-circle.svg'),linear-gradient(#ECF3F9,#ECF3F9);
+    background-repeat: no-repeat;
+    background-position: center -100%;
+}
+@media screen and (min-width:460px){
+            
+            .bigContainer{
+                background-position: center -80%;
+            }
+    }
+@media screen and (min-width:768px){
+            .bigContainer{
+                background-position: center -130%;
+            }        
+}
+
+@media screen and (min-width:992px){
+    .bigContainer{
+    background-position: 150% -450%;
+   }
+}
+
+@media screen and (min-width:1200px){
+    .bigContainer{
+    background-position: 110% -480%;
+   }
+}
