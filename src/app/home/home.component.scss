@@ -1,0 +1,49 @@
+@import '../app.component.scss';
+@import '../../styles.scss';
+
+#emailInput{
+    border:none;
+    z-index:2;
+    &:focus{
+        box-shadow: none;
+        border:1px solid $charmPink;
+        border-right:none;
+    }
+    &::placeholder{
+        padding-left:.5rem;
+        font-size: 1rem;
+        line-height: 1.3;
+        color:$lightBlue;
+        font-weight: 500;
+    }
+}
+#enterEmailBtn{
+    z-index:4;
+    position: absolute;
+    right:0px;
+    height: 100%;
+    border:none;
+}
+.imageHomeWidth{
+    width:100%;
+}
+
+@media screen and (min-width:460px){
+            #emailInput{
+                &::placeholder{
+                    padding-left:1rem;
+                }
+            }
+            .imageHomeWidth{
+                width: auto;
+            }
+    }
+
+
+@media screen and (min-width:992px){
+   .imageHomeHeading{
+    order:2;
+   }
+}
+
+
