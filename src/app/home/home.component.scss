@@ -27,7 +27,11 @@
 .imageHomeWidth{
     width:100%;
 }
-
+.whoWork{
+    background-image: url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position:center 300%;
+}
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
@@ -38,12 +42,19 @@
                 width: auto;
             }
     }
-
+@media screen and (min-width:768px){
+     .whoWork{
+                background-position:center 200%;
+           }
+}
 
 @media screen and (min-width:992px){
    .imageHomeHeading,.workOrder{
     order:2;
    }
+    .whoWork{
+    background-position:-40% 80%;
+    }
 }
 
 
