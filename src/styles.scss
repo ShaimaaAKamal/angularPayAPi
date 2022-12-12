@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:wght@200;400&display=swap');
+
 $darkPink:#ba4270;
 $linkWaterWhite:#fbfcfe;
 $sanBlue:#36536b;
@@ -5,16 +7,32 @@ $migBlue:#1b262f;
 $charmPink:#da6d97;
 $lightBlue:#6c8294;
 
+html{
+    font-family: 'Public Sans', sans-serif ;
+}
+.fmHeading{
+    font-family: 'DM Serif Display', serif;
+}
+
+.w-90{
+    width: 90% !important;
+}
+
 .textLightBlue{
     color:$lightBlue;
 }
 .bgDark{
     background-color: $migBlue;
 }
+.textSanBlue{
+    color:$sanBlue;
+}
 .button{
     padding:.7rem 1.5rem;
-    border-radius: 2rem;
+    border-radius: 2.2rem !important;
     border:none;
+    font-size: 15px;
+    font-weight:500;
 }
 .mainBtn{
     @extend .button;
@@ -60,3 +78,4 @@ $lightBlue:#6c8294;
          border-color: $lightBlue;
     }
 }
+
