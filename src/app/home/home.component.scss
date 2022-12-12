@@ -32,6 +32,10 @@
     background-repeat: no-repeat;
     background-position:center 300%;
 }
+.implementInfo{
+    position: relative;
+    top:-20px;
+}
 @media screen and (min-width:460px){
             #emailInput{
                 &::placeholder{
@@ -46,6 +50,9 @@
      .whoWork{
                 background-position:center 200%;
            }
+     .implementInfo{
+                top:-60px;
+            }
 }
 
 @media screen and (min-width:992px){
@@ -55,6 +62,9 @@
     .whoWork{
     background-position:-40% 80%;
     }
+    .implementInfo{
+        position: static;
+            }
 }
 
 
