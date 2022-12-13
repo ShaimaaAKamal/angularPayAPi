@@ -81,10 +81,18 @@
     .implementInfo{
         position: static;
             }
+    .simpleUi{
+    background-image:url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% + 500px) -150px;
+}
 }
 
  @media screen and (min-width:1200px){
     .home{
     background-position: 110% -200px;
    }
+      .simpleUi{
+    background-position: calc(100% + 450px) -80px; 
+}
 }
