@@ -10,6 +10,11 @@
 .socials a svg:hover path{
     fill:#da6d97 !important;
 }
+.footer{
+    background-image:url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: center -40%;
+}
 
 @media screen and (min-width:768px){
             .logoDiv{
@@ -19,6 +24,10 @@
                 width:30%;
                 text-align: right;
             }
+
+            .footer{
+                background-image:unset();
+                }
              
             
 }
