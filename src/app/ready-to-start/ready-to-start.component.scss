@@ -1,0 +1,56 @@
+@import '../../styles.scss';
+@import '../home/home.component.scss';
+
+.readyToStartWidth{
+    display: block !important;
+    input{
+            width: 90% !important;
+            margin: 0 auto 1rem;
+        &:focus{
+            border:1px solid $charmPink !important;
+    }
+    }
+
+    #enterEmailBtn{
+        padding:.8rem 0;
+        position: static;
+        width: 90% !important;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:768px){
+            .readyToStartWidth{
+                width: 80% !important;
+                display: flex !important;
+                input{
+                    width: auto !important;
+                    margin: 0 ;
+                     &:focus{
+                        border-right:none !important;
+                    }
+                }
+                #enterEmailBtn{
+                    padding: 0;
+                    position: absolute;
+                    width: auto !important;
+                    display: inline;
+                    margin: 0;
+                }
+            }
+            
+}
+
+@media screen and (min-width:992px){
+    .readyToStartWidth{
+        width: 50% !important;
+    }        
+}
+
+@media screen and (min-width:1200px){
+    .readyToStartWidth{
+        width: 40% !important;
+    }
+}
+
