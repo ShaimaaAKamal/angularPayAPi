@@ -1,5 +1,11 @@
-@import '../app.component.scss';
 @import '../../styles.scss';
+
+.home{
+    padding-top:60px;
+    background-image: url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
+     background-repeat: no-repeat;
+    background-position: center -250px;
+}
 
 #emailInput{
     border:none;
@@ -36,7 +42,11 @@
     position: relative;
     top:-20px;
 }
+
 @media screen and (min-width:460px){
+            .home{
+                background-position: center -300px;
+            }
             #emailInput{
                 &::placeholder{
                     padding-left:1rem;
@@ -47,6 +57,9 @@
             }
     }
 @media screen and (min-width:768px){
+       .home{
+                background-position: center -400px;
+            }    
      .whoWork{
                 background-position:center 200%;
            }
@@ -56,6 +69,9 @@
 }
 
 @media screen and (min-width:992px){
+  .home{
+    background-position: 150% -200px;
+   }
    .imageHomeHeading,.workOrder{
     order:2;
    }
@@ -67,4 +83,8 @@
             }
 }
 
-
+ @media screen and (min-width:1200px){
+    .home{
+    background-position: 110% -200px;
+   }
+}
