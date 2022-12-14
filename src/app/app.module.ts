@@ -11,6 +11,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReadyToStartComponent } from './ready-to-start/ready-to-start.component';
+import { PricePlanComponent } from './price-plan/price-plan.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReadyToStartComponent } from './ready-to-start/ready-to-start.component
     NotFoundComponent,
     NavbarComponent,
     FooterComponent,
-    ReadyToStartComponent
+    ReadyToStartComponent,
+    PricePlanComponent
   ],
   imports: [
     BrowserModule,

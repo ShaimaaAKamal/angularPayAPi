@@ -1,1 +1,17 @@
-<p>pricing works!</p>
+       <div class='pricing'>
+       <div class="container-md">
+                    <h1 class='display-5 fmHeading text-center text-lg-start textSanBlue'>Pricing</h1>
+       </div>
+    </div>
+    <div class='plans'>
+        <div class="container-md">
+          <div class="row g-5">
+            <div *ngFor="let planTitle of plansTitles ; let index=index;" class="col-md-4">
+              <app-price-plan [title]="planTitle"  [children]="planDecriptions[index]" [price]="planPrices[index]" [planOptions]="plansOptions[index]" [planOptionsTitles]="planOptionsTitles">
+              </app-price-plan>
+          </div>
+          </div>
+        </div>
+    </div>
+    <app-ready-to-start></app-ready-to-start>
+ 

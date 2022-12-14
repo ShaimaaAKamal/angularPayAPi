@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+.optionInactive{
+    color:#8DA4B4;
+}
+.option{
+    padding-left: 40%;
+}
+
+
+@media screen and (min-width:768px){
+.option{
+    padding-left: 20%;
+}
+            
+}
+
+@media screen and (min-width:992px){
+.option{
+    padding-left: 0px;
+}
+             
+}
+
+

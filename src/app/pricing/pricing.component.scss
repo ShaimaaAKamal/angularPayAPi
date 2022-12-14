@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.pricing{
+    padding-top: 100px;
+    height: 200px;
+    background-image: url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% + 400px) -650px;
+}
+
+@media screen and (min-width:768px){
+.pricing{
+    height:300px;
+    background-position: calc(100% + 420px) -480px;
+    h1{
+        padding-top: 50px;
+    }
+}
+            
+}
+
+@media screen and (min-width:992px){
+.pricing{
+    background-position: calc(100% + 150px) -550px;
+}             
+}
+
+
