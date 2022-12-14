@@ -1,0 +1,40 @@
+@import '../../styles.scss';
+
+.about{
+        background-image: url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        background-position: calc(100% + 400px) -650px;
+}
+.aboutHeading{
+  width:95%;
+  margin:0 auto;   
+}
+
+@media screen and (min-width:768px){
+.about{
+        background-position: calc(100% + 420px) -480px;
+}
+.aboutHeading{
+  width:100%;
+  margin:0 auto;   
+}
+            
+}
+
+@media screen and (min-width:992px){
+.about{
+    background-position: calc(100% + 150px) -550px;
+}
+.aboutHeading{
+  width:85%;
+}
+             
+}
+
+@media screen and (min-width:1200px){
+    .aboutHeading{
+         width:70%;
+        }
+}
+
