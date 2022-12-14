@@ -17,6 +17,21 @@ html{
 .w-90{
     width: 90% !important;
 }
+.textSite{
+    color: $darkPink;
+}
+.borderBottom{
+    border-bottom: .2px solid #8DA4B4;
+}
+.borderTop{
+    border-top: .2px solid #8DA4B4;
+}
+.fs-7{
+    font-size: 1.2rem;
+}
+.textTransparent{
+    color:transparent;
+}
 
 .textLightBlue{
     color:$lightBlue;
@@ -56,7 +71,7 @@ html{
     color:$migBlue;
     border:1px solid $migBlue;
     &:hover{
-        background-color: $migBlue;
+        background-color: $migBlue !important;
         color:$linkWaterWhite
     }
     &:disabled{
