@@ -10,6 +10,12 @@
   width:95%;
   margin:0 auto;   
 }
+.smallaboutBorder{
+        border-bottom: .2px solid #8DA4B4;
+}
+.topaboutBorder{
+        border-top: .2px solid #8DA4B4;
+}
 
 @media screen and (min-width:768px){
 .about{
@@ -19,6 +25,15 @@
   width:100%;
   margin:0 auto;   
 }
+.smallaboutBorder,.topaboutBorder{
+    border:none;
+}
+
+.aboutBorder{
+        border-bottom: .2px solid #8DA4B4;
+        border-top: .2px solid #8DA4B4;
+}
+
             
 }
 
