@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReadyToStartComponent } from './ready-to-start/ready-to-start.component';
 import { PricePlanComponent } from './price-plan/price-plan.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { PricePlanComponent } from './price-plan/price-plan.component';
     NavbarComponent,
     FooterComponent,
     ReadyToStartComponent,
-    PricePlanComponent
+    PricePlanComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
