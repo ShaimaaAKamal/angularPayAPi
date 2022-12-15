@@ -1,0 +1,48 @@
+@import '../../styles.scss';
+.contact .form-control{
+     background-color: transparent;
+     border-radius: unset;
+     border:none;
+     border-bottom: .2px solid #8DA4B4;
+     color:$migBlue;
+     &:focus{
+        box-shadow: none;
+        background-color: transparent;
+        border-bottom:1px solid $migBlue;
+     }
+}
+   #message{
+     color: $lightBlue !important;  
+    }
+    .form-check-input{
+        background-color: #BCCBD6 !important;
+        border-radius: unset !important;
+        border:none !important;
+         &:focus{
+            box-shadow: none !important;
+        }
+        &:checked{
+            box-shadow: none !important;
+            background-color: #ba4270 !important;
+            color:#fff !important;
+        }
+    }
+    .textLightSite{
+        color:$charmPink;
+    }
+ .contact .contactError{
+            border-bottom:1px solid $charmPink;
+            color:$charmPink;
+            &::placeholder{
+                color:$charmPink;
+            }
+             &:focus{
+                border-bottom:1px solid $charmPink;
+            }
+ }
+@media screen and (min-width:992px){
+ .w-85{
+    width:95% !important;
+}
+       
+}

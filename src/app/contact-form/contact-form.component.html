@@ -1,0 +1,38 @@
+ <div class='contact mt-lg-5'>
+   <div class="alert alert-success text-center" *ngIf="clear">Your Message has been sent</div>
+   <div class="alert alert-danger text-center" *ngIf="error">Your Message hasn't been sent</div>
+    <form  [formGroup]="contact" (ngSubmit)="onSubmit(contact)">
+          <div class="mb-3">
+            <input type="text" formControlName="name" [ngClass]="['form-control','ps-3',(contact.get('name')?.status === 'INVALID' && contact.get('name')?.touched && !clear) ? 'contactError' : '']" name="name"  placeholder="Name"  />
+            <p *ngIf="contact.get('name')?.getError('required') && contact.get('name')?.touched && !clear" class='small textLightSite ps-3 mb-0 mt-1'>Can't be Empty</p>
+            <p *ngIf="contact.get('name')?.getError('minlength') && contact.get('name')?.touched && !clear" class='small textLightSite ps-3 mb-0 mt-1'>Min Length must be 5</p>
+            <p *ngIf="contact.get('name')?.getError('maxlength') && contact.get('name')?.touched && !clear" class='small textLightSite ps-3 mb-0 mt-1'>Max Length is 15</p>
+        </div>
+         <div class="mb-3">
+            <input type="email" formControlName="email" [ngClass]="['form-control','ps-3',(contact.get('email')?.status === 'INVALID' && contact.get('email')?.touched && !clear) ? 'contactError' : '']" name="email" placeholder="Email Address"  />
+             <p *ngIf="contact.get('email')?.getError('required') && contact.get('email')?.touched && !clear" class='small textLightSite ps-3 mb-0 mt-1'>Can't be Empty</p>
+             <p *ngIf="contact.get('email')?.getError('email') && contact.get('email')?.touched && !clear" class='small textLightSite ps-3 mb-0 mt-1'>Invalid Email</p>
+        </div>
+        <div class="mb-3" >
+            <input type="text"   formControlName="company" [ngClass]="['form-control','ps-3',(contact.get('company')?.status === 'INVALID' && contact.get('company')?.touched && !clear) ? 'contactError' : '']" name="company" placeholder="Company Name" />
+            <p *ngIf="contact.get('company')?.getError('required') && contact.get('company')?.touched && !clear" class='small textLightSite ps-3 mb-0 mt-1'>Can't be Empty</p>
+        </div>
+          <div class="mb-3" >
+            <input type="text"   formControlName="title" class="form-control ps-3" name="company" placeholder="Title" />
+        </div>
+        <div class="mb-4">
+          <div class="form-floating">
+            <textarea class="form-control ps-3" formControlName="message" placeholder="Message" value="message" id="message"   [ngStyle]="{'height.px': 120}">Message</textarea>
+          </div>
+        </div>
+         <div class="form-check pt-2 mb-4">
+              <input class="form-check-input"  formControlName="check" type="checkbox" value="updated" id="update"/>
+              <label class="form-check-label textLightBlue small px-3 w-85" for="update">
+                Stay up-to-date with company announcements and updates to our API
+              </label>
+        </div>
+         <div>
+              <button type="submit"  [disabled]="contact.status === 'VALID'? false :true" class='secondaryDarkBtn bg-transparent px-5'>Submit</button>
+         </div>
+    </form>       
+</div>
