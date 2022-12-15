@@ -75,7 +75,7 @@ html{
         color:$linkWaterWhite
     }
     &:disabled{
-        background-color: $linkWaterWhite;
+        background-color: transparent !important;
         color:$lightBlue;
         border-color: $lightBlue;
     }
