@@ -12,8 +12,8 @@ export class NavbarComponent {
 
    handleOpenMenu=()=>{
     this.menu.nativeElement.classList.add('d-none');
-    this.close.nativeElement.classList.remove('d-none');
     this.close.nativeElement.classList.add('adjustBtn');
+    this.close.nativeElement.classList.remove('d-none');
     this.navbarCollapse.nativeElement.classList.add('d-block');
     this.navbarCollapse.nativeElement.classList.remove('d-none');
   }
