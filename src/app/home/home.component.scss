@@ -1,10 +1,10 @@
 @import '../../styles.scss';
 
 .home{
-    padding-top:60px;
+    padding-top:80px;
     background-image: url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
      background-repeat: no-repeat;
-    background-position: center -250px;
+    background-position: center -350px;
 }
 
 #emailInput{
@@ -36,7 +36,7 @@
 .whoWork{
     background-image: url('../../assets/Images/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
-    background-position:center 300%;
+    background-position:center -550px;
 }
 .implementInfo{
     position: relative;
